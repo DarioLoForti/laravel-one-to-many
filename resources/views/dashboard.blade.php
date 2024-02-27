@@ -53,8 +53,8 @@
                                         <a href="#"
                                             class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
                                             id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <img src="https://github.com/mdo.png" alt="hugenerd" width="30"
-                                                height="30" class="rounded-circle">
+                                            <img src="https://avatars.githubusercontent.com/u/146130373?v=4" alt="hugenerd"
+                                                width="30" height="30" class="rounded-circle">
                                             <span class="d-none d-sm-inline mx-1">loser</span>
                                         </a>
                                         <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
