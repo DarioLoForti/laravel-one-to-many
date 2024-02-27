@@ -33,6 +33,13 @@
                                             <a href="{{ route('admin.projects.create') }}" class="nav-link px-0">
                                                 <span class="d-none d-sm-inline">Create New Project</span></a>
                                         </li>
+                                        <li class="w-100">
+                                            <a href="{{ route('admin.types.index') }}" class="nav-link px-0">
+                                                <span class="d-none d-sm-inline">Types</span></a>
+                                        </li>
+                                        <li class="w-100">
+                                            <a href="{{ route('admin.types.create') }}" class="nav-link px-0">
+                                                <span class="d-none d-sm-inline">Create New Type</span></a>
                                         </li>
                                     </ul>
                                     <hr>
@@ -89,6 +96,9 @@
                                                             class="btn btn-sm btn-primary">Dettagli</a>
                                                         <a href="{{ route('admin.types.edit', $type->id) }}"
                                                             class="btn btn-sm btn-warning ms-2">Modifica</a>
+                                                        <button class="btn btn-sm btn-danger mt-3" data-bs-toggle="modal"
+                                                            data-bs-target="#modal_delete_{{ $type->id }}">Elimina</button>
+                                                        @include('admin.types.modal')
                                                     </div>
                                                 </td>
                                             </tr>
