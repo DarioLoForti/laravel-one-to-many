@@ -23,6 +23,8 @@
                         <p class="card-text">{{ $project->descrizione }}</p>
                         <div class="d-flex justify-content-around">
                             <h5>Autore: {{ $project->autore }}</h5>
+                            <h6> {{ $project->type_id ? $project->type->nome : 'Nessuna categoria' }}
+                            </h6>
                             <h5>Data fine progetto: {{ $project->fine_progetto }}</h5>
                         </div>
 

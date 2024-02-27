@@ -79,6 +79,8 @@
                                             @endif
                                             <div class="card-body">
                                                 <h5 class="card-title">{{ $project->titolo }}</h5>
+                                                <h6> {{ $project->type_id ? $project->type->nome : 'Nessuna categoria' }}
+                                                </h6>
                                                 <p class="card-text">{{ Str::limit($project->descrizione, 30, '...') }}</p>
                                                 <div class="d-flex mt-4">
                                                     <a href="{{ route('admin.projects.show', ['project' => $project->id]) }}"
