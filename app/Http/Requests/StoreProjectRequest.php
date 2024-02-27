@@ -27,6 +27,7 @@ class StoreProjectRequest extends FormRequest
             'titolo' => 'required|max:150|unique:projects',
             'autore' => 'required|max:50',
             'descrizione' => 'required',
+            'type_id' => 'nullable|exists:types,id',
             'fine_progetto' => 'required'
         ];
     }
@@ -39,6 +40,7 @@ class StoreProjectRequest extends FormRequest
             'autore.required'     => 'Il nome dell\'autore è obbligatorio',
             'autore.max'     => 'Il nome dell\'autore può contenere al massimo 50 caratteri',
             'descrizione.required' => 'La descrizione è obbligatoria',
+            'type_id.exists' => 'la tipologgia non esiste',
             'fine_progetto.required' => 'la data di fine progetto è obbligatoria'
         ];
     }

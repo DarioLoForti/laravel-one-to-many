@@ -36,7 +36,7 @@
                     </div>
                     <div class="form-group my-3">
                         <label for="type_id" class="control-label text-white">Selezione la tipologia</label>
-                        <select name="type_id" id="type_id" class="form-select">
+                        <select name="type_id" id="type_id" class="form-select"@error('type_id') is-invalid @enderror">
                             <option value="">Seleziona la tipologia</option>
                             @foreach ($types as $type)
                                 <option value="{{ $type->id }}">{{ $type->nome }}</option>
