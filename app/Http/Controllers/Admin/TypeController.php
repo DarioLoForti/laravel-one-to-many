@@ -6,6 +6,7 @@ use App\Models\Type;
 use App\Http\Requests\StoreTypeRequest;
 use App\Http\Requests\UpdateTypeRequest;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Str;
 
 class TypeController extends Controller
 {
@@ -39,7 +40,16 @@ class TypeController extends Controller
      */
     public function store(StoreTypeRequest $request)
     {
-        //
+        $form_data = $request->all();
+
+        $type = new Type();
+
+        $slug = Str::slug($form_data['nome'], '-');
+        $type->slug = $slug;
+        $type->fill($form_data);
+        $type->save();
+
+        return redirect()->route('admin.types.index');
     }
 
     /**

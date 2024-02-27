@@ -11,7 +11,7 @@
                     @csrf
                     <div class="form-group my-3">
                         <label for="nome" class="control-label text-white">nome</label>
-                        <input type="text" name="nome" id="nome" placeholder="Inserisci il nome del progetto"
+                        <input type="text" name="nome" id="nome" placeholder="Inserisci il nome della tipologia"
                             class="form-control @error('nome') is-invalid @enderror" value="{{ old('nome') }}" required>
                         @error('nome')
                             <div class="text-danger">{{ $message }}</div>
@@ -20,7 +20,7 @@
                     <div class="form-group my-3">
                         <label for="descrizione" class="control-label text-white">Descrizione</label>
                         <textarea name="descrizione" id="descrizione" class="form-control @error('descrizione') is-invalid @enderror"
-                            placeholder="Inserisci la descrizione del progetto" cols="50" rows="10" required>{{ old('descrizione') }}</textarea>
+                            placeholder="Inserisci la descrizione della tipologia" cols="50" rows="10" required>{{ old('descrizione') }}</textarea>
                         @error('descrizione')
                             <div class="text-danger">{{ $message }}</div>
                         @enderror
