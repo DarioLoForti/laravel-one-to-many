@@ -1,0 +1,23 @@
+@import '~bootstrap/scss/bootstrap';
+
+body{
+    background-color: rgb(49, 48, 48);
+}
+
+
+.card{
+    height: 350px;
+    img{
+        width: 50%;
+        margin-left: 45px;
+    }
+}
+.card-show{
+    height: 500px;
+    .card-img{
+        
+        img{
+            width: 100px;
+        }
+    }
+}
