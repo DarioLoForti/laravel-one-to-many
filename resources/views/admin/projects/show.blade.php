@@ -39,7 +39,7 @@
                                 <button type="submit" class="btn btn-danger">Elimina</button>
                             </form>
                             <a href="{{ route('admin.projects.index') }}" class="btn btn-primary float-end">Torna ai
-                                post</a>
+                                progetti</a>
                         </div>
                     </div>
 

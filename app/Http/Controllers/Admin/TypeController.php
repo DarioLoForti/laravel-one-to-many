@@ -50,8 +50,9 @@ class TypeController extends Controller
      */
     public function show(Type $type)
     {
-        //
+        return view('admin.types.show', compact('type'));
     }
+
 
     /**
      * Show the form for editing the specified resource.
