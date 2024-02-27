@@ -24,7 +24,7 @@ class UpdateTypeRequest extends FormRequest
     public function rules()
     {
         return [
-            'nome' => 'required|max:15|unique:types',
+            'nome' => 'required|max:150|unique:types',
             'descrizione' => 'required',
         ];
     }
@@ -32,7 +32,7 @@ class UpdateTypeRequest extends FormRequest
     {
         return [
             'nome.required' => 'Il nome è obbligatorio',
-            'nome.max'     => 'Il nome può contenere al massimo 50 caratteri',
+            'nome.max'     => 'Il nome può contenere al massimo 150 caratteri',
             'nome.unique'     => 'E\' già presente una tipologia con questo nome',
             'descrizione.required' => 'La descrizione è obbligatoria',
         ];
